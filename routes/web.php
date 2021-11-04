@@ -14,5 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    $data = [
+        "marca" => "Fiat",
+        "modello" => "Multipla",
+        "punteggio" => "2.3/10",
+        "testers" => [
+            "Germano Mosconi",
+            "Pupazzo Gnappo",
+            "Aldo Giovanni e Giacomo"
+        ]
+    ];
+    
+
+    return view('home', $data);
 });

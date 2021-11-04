@@ -10,6 +10,19 @@
         <h1>
             Hello world! 
         </h1>
-        <h3>(con Laravel)</h3>
+        
+        
+
+        <h3>Casa automobilistica: {{$marca}}</h3>
+        <h3>Modello: {{$modello}}</h3>
+        <h4>Punteggio utenti: {{$punteggio}}</h4>
+
+        <h3>I tester della prova sustrada sono:</h3>
+        <ol>
+            @foreach ($testers as $tester)
+                <li>{{$tester}}</li>
+            @endforeach
+        </ol>
+        
     </body>
 </html>
